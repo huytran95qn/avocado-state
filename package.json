@@ -1,0 +1,26 @@
+{
+    "name": "avocado-state",
+    "private": true,
+    "version": "1.0.0",
+    "description": "A state management library for JavaScript applications.",
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "clean": "rimraf dist && rimraf packages/*/dist",
+        "build": "pnpm --filter @avocado-state/core build && pnpm --filter @avocado-state/example build",
+        "dev": "pnpm --filter @avocado-state/example dev"
+    },
+    "devDependencies": {
+        "rimraf": "^6.0.1",
+        "typescript": "^5.6.3"
+    },
+    "engines": {
+        "node": ">=18"
+    },
+    "dependencies": {
+        "inversify": "^7.10.4",
+        "reflect-metadata": "^0.2.2"
+    },
+    "packageManager": "pnpm@9.12.0"
+}

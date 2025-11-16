@@ -1,0 +1,26 @@
+{
+  "name": "@avocado-state/core",
+  "version": "0.1.0",
+  "description": "Core state management primitives for Avocado State.",
+  "license": "MIT",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsc -p tsconfig.build.json --watch"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "peerDependencies": {
+    "reflect-metadata": "^0.2.0"
+  },
+  "dependencies": {
+    "inversify": "^7.10.4"
+  }
+}
