@@ -13,6 +13,8 @@
     "noEmit": false,
     "isolatedModules": true,
     "baseUrl": "./",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "paths": {
       "@avocado-state/core": ["packages/core/src/index.ts"]
     }
